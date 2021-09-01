@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SearchView">
+        <attr name="searchHintText" format="string" />
+        <attr name="searchElevation" format="dimension" />
+        <attr name="searchBorderSelector" format="color" />
+        <attr name="android:inputType" />
+        <attr name="android:imeOptions" />
+    </declare-styleable>
+</resources>

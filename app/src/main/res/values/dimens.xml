@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="progress_size">50dp</dimen>
+    <dimen name="track_img_size">60dp</dimen>
+    <dimen name="track_img_radius">8dp</dimen>
+    <dimen name="list_padding">5dp</dimen>
+    <dimen name="list_item_padding">5dp</dimen>
+    <dimen name="white_space_margin">10dp</dimen>
+    <dimen name="white_space_margin_2x">20dp</dimen>
+    <dimen name="text_margin">2dp</dimen>
+
+    <dimen name="sv_elevation">4dp</dimen>
+    <dimen name="sv_corner_radius">8dp</dimen>
+    <dimen name="sv_padding">12dp</dimen>
+    <dimen name="sv_stroke_width">2dp</dimen>
+    <dimen name="border_height">2dp</dimen>
+</resources>

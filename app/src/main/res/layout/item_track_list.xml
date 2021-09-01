@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/list_item_padding">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_track_number"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_track_album"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_track_album"
+        android:layout_width="@dimen/track_img_size"
+        android:layout_height="@dimen/track_img_size"
+        android:layout_marginHorizontal="@dimen/white_space_margin"
+        app:layout_constraintEnd_toStartOf="@id/txt_track_name"
+        app:layout_constraintStart_toEndOf="@id/txt_track_number"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_track_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/img_active_state"
+        app:layout_constraintStart_toEndOf="@id/img_track_album"
+        app:layout_constraintTop_toTopOf="@id/img_track_album" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_album_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/txt_track_name"
+        app:layout_constraintStart_toStartOf="@id/txt_track_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_track_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_artist_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_margin"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/txt_track_name"
+        app:layout_constraintStart_toStartOf="@id/txt_track_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_album_name" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_active_state"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_active"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
